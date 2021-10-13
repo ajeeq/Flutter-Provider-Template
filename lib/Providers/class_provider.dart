@@ -12,15 +12,15 @@ class ClassProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  setStudent(student) {
-    studentModel!.add(
-      StudentModel(
-        student['name'] ?? "",
-        student['age'] ?? "",
-      ),
-    );
-    notifyListeners();
-  }
+  // setStudent(student) {
+  //   studentModel!.add(
+  //     StudentModel(
+  //       student['name'] ?? "",
+  //       student['age'] ?? "",
+  //     ),
+  //   );
+  //   notifyListeners();
+  // }
 
   getOneStudent(findAge) {
     StudentModel? oneStudent = studentModel!.firstWhereOrNull((student) {
